@@ -39,7 +39,6 @@ export const UsersList = () => {
           )
         })}
       </ul>
-      <button>Load More</button>
     </>
   );
 };
