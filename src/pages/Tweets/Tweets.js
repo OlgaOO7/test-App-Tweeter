@@ -6,12 +6,12 @@ import { UserItem } from "../../components/UserItem/UserItem";
 import { Loader } from "../../components/Loader/Loader";
 import Back from "../../components/Back/Back";
 import { Filter } from "../../components/Filter/Filter";
+  import css from "./Tweets.module.css";
 
 
 const usersPerPage = 3;
 
 const Tweets = () => {
-  // import css from "./Tweets.module.css";
   const [users, setUsers] = useState([]);
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
@@ -66,14 +66,13 @@ const Tweets = () => {
     setFilteredUsers(updatedFilteredUsers);
   }, [users, filter]);
 
-  useEffect(() => {
-    const resetFilter = () => {
-      setFilter('all');
-      localStorage.removeItem('filter');
-    };
-    return resetFilter;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // useEffect(() => {
+  //   const resetFilter = () => {
+  //     setFilter('all');
+  //     localStorage.removeItem('filter');
+  //   };
+  //   return resetFilter;
+  // }, []);
 
   const onLoadMoreClick = () => {
     setPage((prevPage) => prevPage + 1);
@@ -81,6 +80,7 @@ const Tweets = () => {
 
   const handleFilterChange = (e) => {
     setFilter(e.target.value);
+    console.log(filter);
   };
 
   return (
@@ -88,7 +88,7 @@ const Tweets = () => {
       <Back />
       <Filter filterOption={filter} onChange={handleFilterChange} />
       {isLoading && <Loader />}
-      <ul>
+      <ul className={css.userList}>
         {filteredUsers.slice(0, page * usersPerPage).map(({ id, user, tweets, followers, avatar, isFollowing }) => (
           <UserItem
             key={id}

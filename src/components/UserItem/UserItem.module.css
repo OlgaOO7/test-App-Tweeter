@@ -1,0 +1,133 @@
+.userItem {
+  position: relative;
+  width: 380px;
+  height: 460px;
+  margin-top: 40px;
+  text-align: center;
+  background: linear-gradient(to bottom, #471CA9 0%, #5736A3 100%, #4B2A99 100%);
+  box-shadow: -2.58px 6.87px 20.62px 0 rgba(0, 0, 0, 0.23);
+  border-radius: 20px;
+}
+
+/* .cardWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+elementWrapper {
+  position: absolute;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 28px;
+  left: 36px;
+}
+
+.rectangleImage {
+  position: absolute;
+  width: 380px;
+  height: 8px;
+  z-index: 20;
+  top: 214px;
+  left: 0;
+  background-color: #EBD8FF;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
+  inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
+
+}
+
+.elipsWrapper {
+  position: absolute;
+  z-index: 150;
+  top: 212px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: #EBD8FF;
+  border-radius: 50%;
+  box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06), inset 0px -2.19582px 4.39163px #AE7BE3, inset 0px 4.39163px 3.29372px #FBF8FF;
+}
+
+.avatarImg {
+  position: absolute;
+  z-index: 150;
+  top: 212px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 62px;
+  height: 62px;
+  border-radius: 50px;
+}
+
+.elementsWrapper {
+  position: absolute;
+  top: 284px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.tweets{
+  margin-bottom: 16px;
+  color: #EBD8FF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-transform: uppercase ;
+  white-space: nowrap;
+}
+
+.followers {
+  margin-bottom: 26px;
+  color: #EBD8FF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-transform: uppercase ;
+  white-space: nowrap;
+}
+
+.btnFollow {
+  padding: 14px 28px;
+  color: #373737;
+  background-color: #EBD8FF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border-radius: 10.31px;
+}
+
+.btn {
+  padding: 14px 28px;
+  color: #373737;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border-radius: 10.31px;
+}
+
+.btn.following {
+  background-color: #5CD3A8;
+}
+
+.btn.follow {
+  background-color: #EBD8FF;
+}
