@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/test-app-tweeter/static/css/main.441f5055.css",
-    "main.js": "/test-app-tweeter/static/js/main.765e2632.js",
+    "main.css": "/test-app-tweeter/static/css/main.fc3bfc58.css",
+    "main.js": "/test-app-tweeter/static/js/main.418d4dcb.js",
     "static/css/290.f24686b4.chunk.css": "/test-app-tweeter/static/css/290.f24686b4.chunk.css",
     "static/js/290.55a979f3.chunk.js": "/test-app-tweeter/static/js/290.55a979f3.chunk.js",
-    "static/css/221.2f239396.chunk.css": "/test-app-tweeter/static/css/221.2f239396.chunk.css",
-    "static/js/221.863e8e53.chunk.js": "/test-app-tweeter/static/js/221.863e8e53.chunk.js",
+    "static/css/325.78199e11.chunk.css": "/test-app-tweeter/static/css/325.78199e11.chunk.css",
+    "static/js/325.aed0db5a.chunk.js": "/test-app-tweeter/static/js/325.aed0db5a.chunk.js",
     "static/media/user-card.png": "/test-app-tweeter/static/media/user-card.d1cfd1d631043a118d0d.png",
     "index.html": "/test-app-tweeter/index.html",
-    "main.441f5055.css.map": "/test-app-tweeter/static/css/main.441f5055.css.map",
-    "main.765e2632.js.map": "/test-app-tweeter/static/js/main.765e2632.js.map",
+    "main.fc3bfc58.css.map": "/test-app-tweeter/static/css/main.fc3bfc58.css.map",
+    "main.418d4dcb.js.map": "/test-app-tweeter/static/js/main.418d4dcb.js.map",
     "290.f24686b4.chunk.css.map": "/test-app-tweeter/static/css/290.f24686b4.chunk.css.map",
     "290.55a979f3.chunk.js.map": "/test-app-tweeter/static/js/290.55a979f3.chunk.js.map",
-    "221.2f239396.chunk.css.map": "/test-app-tweeter/static/css/221.2f239396.chunk.css.map",
-    "221.863e8e53.chunk.js.map": "/test-app-tweeter/static/js/221.863e8e53.chunk.js.map"
+    "325.78199e11.chunk.css.map": "/test-app-tweeter/static/css/325.78199e11.chunk.css.map",
+    "325.aed0db5a.chunk.js.map": "/test-app-tweeter/static/js/325.aed0db5a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.441f5055.css",
-    "static/js/main.765e2632.js"
+    "static/css/main.fc3bfc58.css",
+    "static/js/main.418d4dcb.js"
   ]
 }
