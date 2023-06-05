@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const Filter = ({filterOption, onChange}) => {
   return (      
     <select value={filterOption} onChange={onChange}>
@@ -6,4 +8,10 @@ export const Filter = ({filterOption, onChange}) => {
     <option value="following">Following</option>
   </select>
   );
+};
+
+
+Filter.propTypes = {
+  filterOption: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
