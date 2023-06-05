@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/test-app-tweeter/static/css/main.7b5f6fbf.css",
-    "main.js": "/test-app-tweeter/static/js/main.6cdc1917.js",
+    "main.js": "/test-app-tweeter/static/js/main.f242faa2.js",
     "static/js/75.dc48b38e.chunk.js": "/test-app-tweeter/static/js/75.dc48b38e.chunk.js",
-    "static/js/399.f26ba628.chunk.js": "/test-app-tweeter/static/js/399.f26ba628.chunk.js",
+    "static/js/505.6d54699a.chunk.js": "/test-app-tweeter/static/js/505.6d54699a.chunk.js",
     "static/css/580.0c8dff8d.chunk.css": "/test-app-tweeter/static/css/580.0c8dff8d.chunk.css",
     "index.html": "/test-app-tweeter/index.html",
     "main.7b5f6fbf.css.map": "/test-app-tweeter/static/css/main.7b5f6fbf.css.map",
-    "main.6cdc1917.js.map": "/test-app-tweeter/static/js/main.6cdc1917.js.map",
+    "main.f242faa2.js.map": "/test-app-tweeter/static/js/main.f242faa2.js.map",
     "75.dc48b38e.chunk.js.map": "/test-app-tweeter/static/js/75.dc48b38e.chunk.js.map",
-    "399.f26ba628.chunk.js.map": "/test-app-tweeter/static/js/399.f26ba628.chunk.js.map",
+    "505.6d54699a.chunk.js.map": "/test-app-tweeter/static/js/505.6d54699a.chunk.js.map",
     "580.0c8dff8d.chunk.css.map": "/test-app-tweeter/static/css/580.0c8dff8d.chunk.css.map"
   },
   "entrypoints": [
     "static/css/main.7b5f6fbf.css",
-    "static/js/main.6cdc1917.js"
+    "static/js/main.f242faa2.js"
   ]
 }
