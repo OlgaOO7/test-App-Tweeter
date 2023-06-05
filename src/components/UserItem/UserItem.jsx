@@ -1,36 +1,24 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-export const UserItem = ({ id, user, tweets, followers, avatar }) => {
-  const [isFollowing, setIsFollowing] = useState(JSON.parse(localStorage.getItem(`followStatus-${id}`)) ?? false);
-  const [followersCount, setFollowersCount] = useState(JSON.parse(localStorage.getItem(`followersCount-${id}`)) ?? followers);
+export const UserItem = ({ id, user, tweets, followers, avatar, isFollowing }) => {
+const [isFollowingState, setIsFollowingState] = useState(isFollowing);
+  const [followersCount, setFollowersCount] = useState(JSON.parse(localStorage.getItem(`followersCount-${id}`)) || followers);
 
   useEffect(() => {
-    // const storedFollowStatus = localStorage.getItem(`followStatus-${id}`);
-    // if (storedFollowStatus) {
-    //   setIsFollowing(JSON.parse(storedFollowStatus));
-    // }
-    localStorage.setItem(`followStatus-${id}`, JSON.stringify(isFollowing));
-    localStorage.setItem(`followersCount-${id}`, JSON.stringify(followersCount))
-  }, [id, isFollowing, followersCount ]);
-
-  // useEffect(() => {
-    // const storedFollowersCount = localStorage.getItem(`followersCount-${id}`);
-    // if (storedFollowersCount) {
-    //   setFollowersCount(parseInt(storedFollowersCount, 10));
-    // }
-
-  // }, [id]);
+    localStorage.setItem(`followStatus-${id}`, JSON.stringify(isFollowingState));
+    localStorage.setItem(`followersCount-${id}`, JSON.stringify(followersCount));
+  }, [id, isFollowingState, followersCount]);
 
   const handleFollowClick = () => {
-    if (isFollowing) {
-      setFollowersCount(prevCount => prevCount - 1);
+    if (isFollowingState) {
+      setFollowersCount((prevFollowCount) => prevFollowCount - 1);
       localStorage.removeItem(`followStatus-${id}`);
     } else {
-      setFollowersCount(prevCount => prevCount + 1);
+      setFollowersCount((prevFollowCount) => prevFollowCount + 1);
       localStorage.setItem(`followStatus-${id}`, JSON.stringify(true));
     }
-    setIsFollowing(prevFollowing => !prevFollowing);
+    setIsFollowingState((prevFollowing) => !prevFollowing);
   };
 
   useEffect(() => {
@@ -44,7 +32,7 @@ export const UserItem = ({ id, user, tweets, followers, avatar }) => {
       <p>{new Intl.NumberFormat('en-En').format(tweets)} Tweets</p>
       <p>{new Intl.NumberFormat('en-En').format(followersCount)} Followers</p>
       <button type="button" onClick={handleFollowClick}>
-        {isFollowing ? 'Following' : 'Follow'}
+        {isFollowingState ? 'Following' : 'Follow'}
       </button>
     </li>
   );
@@ -56,4 +44,5 @@ UserItem.propTypes = {
   tweets: PropTypes.number.isRequired,
   followers: PropTypes.number.isRequired,
   avatar: PropTypes.string.isRequired,
+  isFollowing: PropTypes.bool.isRequired,
 };
