@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
 import { lazy } from 'react';
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
