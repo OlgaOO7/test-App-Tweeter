@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktest_app_tweeter=self.webpackChunktest_app_tweeter||[]).push([[75],{75:function(e,t,r){r.r(t);var n=r(184);t.default=function(){return(0,n.jsx)("div",{children:(0,n.jsx)("h1",{children:"Welcome to Tweeter!"})})}}}]);
-//# sourceMappingURL=75.dc48b38e.chunk.js.map

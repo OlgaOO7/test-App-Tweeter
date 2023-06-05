@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/test-app-tweeter/static/css/main.7b5f6fbf.css",
-    "main.js": "/test-app-tweeter/static/js/main.f242faa2.js",
-    "static/js/75.dc48b38e.chunk.js": "/test-app-tweeter/static/js/75.dc48b38e.chunk.js",
+    "main.css": "/test-app-tweeter/static/css/main.441f5055.css",
+    "main.js": "/test-app-tweeter/static/js/main.947b7c64.js",
+    "static/css/290.f24686b4.chunk.css": "/test-app-tweeter/static/css/290.f24686b4.chunk.css",
+    "static/js/290.55a979f3.chunk.js": "/test-app-tweeter/static/js/290.55a979f3.chunk.js",
     "static/js/505.6d54699a.chunk.js": "/test-app-tweeter/static/js/505.6d54699a.chunk.js",
     "static/css/580.0c8dff8d.chunk.css": "/test-app-tweeter/static/css/580.0c8dff8d.chunk.css",
     "index.html": "/test-app-tweeter/index.html",
-    "main.7b5f6fbf.css.map": "/test-app-tweeter/static/css/main.7b5f6fbf.css.map",
-    "main.f242faa2.js.map": "/test-app-tweeter/static/js/main.f242faa2.js.map",
-    "75.dc48b38e.chunk.js.map": "/test-app-tweeter/static/js/75.dc48b38e.chunk.js.map",
+    "main.441f5055.css.map": "/test-app-tweeter/static/css/main.441f5055.css.map",
+    "main.947b7c64.js.map": "/test-app-tweeter/static/js/main.947b7c64.js.map",
+    "290.f24686b4.chunk.css.map": "/test-app-tweeter/static/css/290.f24686b4.chunk.css.map",
+    "290.55a979f3.chunk.js.map": "/test-app-tweeter/static/js/290.55a979f3.chunk.js.map",
     "505.6d54699a.chunk.js.map": "/test-app-tweeter/static/js/505.6d54699a.chunk.js.map",
     "580.0c8dff8d.chunk.css.map": "/test-app-tweeter/static/css/580.0c8dff8d.chunk.css.map"
   },
   "entrypoints": [
-    "static/css/main.7b5f6fbf.css",
-    "static/js/main.f242faa2.js"
+    "static/css/main.441f5055.css",
+    "static/js/main.947b7c64.js"
   ]
 }

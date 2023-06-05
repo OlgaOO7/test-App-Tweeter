@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktest_app_tweeter=self.webpackChunktest_app_tweeter||[]).push([[290],{290:function(e,t,r){r.r(t),r.d(t,{default:function(){return c}});var s="Home_titleHomeWrapper__TZReC",n="Home_homeTitle__duF7K",a=r(184),c=function(){return(0,a.jsx)("div",{className:s,children:(0,a.jsx)("h1",{className:n,children:"Welcome to world of Tweet!"})})}}}]);
+//# sourceMappingURL=290.55a979f3.chunk.js.map
