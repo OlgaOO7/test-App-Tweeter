@@ -6,11 +6,12 @@ import { UserItem } from "../../components/UserItem/UserItem";
 import { Loader } from "../../components/Loader/Loader";
 import Back from "../../components/Back/Back";
 import { Filter } from "../../components/Filter/Filter";
-import css from "./Tweets.module.css";
+
 
 const usersPerPage = 3;
 
 const Tweets = () => {
+  // import css from "./Tweets.module.css";
   const [users, setUsers] = useState([]);
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
