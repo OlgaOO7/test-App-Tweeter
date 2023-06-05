@@ -9,14 +9,7 @@
   border-radius: 20px;
 }
 
-/* .cardWrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-elementWrapper {
+.elementWrapper {
   position: absolute;
 }
 
@@ -41,7 +34,7 @@ elementWrapper {
   left: 0;
   background-color: #EBD8FF;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
-  inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
+    inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
 
 }
 
@@ -77,14 +70,14 @@ elementWrapper {
   text-align: center;
 }
 
-.tweets{
+.tweets {
   margin-bottom: 16px;
   color: #EBD8FF;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 24.38px;
-  text-transform: uppercase ;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 
@@ -95,7 +88,7 @@ elementWrapper {
   font-weight: 500;
   font-size: 20px;
   line-height: 24.38px;
-  text-transform: uppercase ;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 

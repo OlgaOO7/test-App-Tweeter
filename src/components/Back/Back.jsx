@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
-import css from "./Back.module.css";
+import css from './Back.module.css';
 
 const Back = () => {
   const location = useLocation();
@@ -9,7 +9,7 @@ const Back = () => {
 
   return (
     <Link to={backLinkLocationRef.current} className={css.navLinkBack}>
-      <ArrowLeftIcon className={css.arrowIcon}/>
+      <ArrowLeftIcon className={css.arrowIcon} />
       Back
     </Link>
   );

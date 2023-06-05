@@ -33,10 +33,10 @@ export const UserItem = ({
       setFollowersCount(prevFollowCount => prevFollowCount - 1);
       localStorage.removeItem(`followStatus-${id}`);
     } else {
-      setFollowersCount((prevFollowCount) => prevFollowCount + 1);
+      setFollowersCount(prevFollowCount => prevFollowCount + 1);
       localStorage.setItem(`followStatus-${id}`, JSON.stringify(true));
     }
-    setIsFollowingState((prevFollowing) => !prevFollowing);
+    setIsFollowingState(prevFollowing => !prevFollowing);
   };
 
   useEffect(() => {

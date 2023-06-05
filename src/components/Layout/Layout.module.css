@@ -1,13 +1,11 @@
 header {
   top: 0;
   left: 0;
-  /* position: sticky; */
-  /* z-index: 250; */
   border-bottom: 0.5px solid rgba(195, 207, 232);
   font-size: 22px;
   font-weight: 600;
   color: #fff;
-  background: linear-gradient(rgba(71, 28, 169, 0.45), rgba(	87, 54, 163, 0.65));
+  background: linear-gradient(rgba(71, 28, 169, 0.45), rgba(87, 54, 163, 0.65));
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
