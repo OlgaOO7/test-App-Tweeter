@@ -8,13 +8,10 @@ import Back from "../../components/Back/Back";
 
 const usersPerPage = 3;
 
-// 
-
 const Tweets = () => {
   const [users, setUsers] = useState([]);
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
-  const [filterOption, setFilterOption] = useState('all'); // Default option is 'all'
 
   useEffect(() => {
     setIsLoading(true);
@@ -35,52 +32,36 @@ const Tweets = () => {
         setUsers(data);
         console.log('users:', users);
         setIsLoading(false);
-      };
+      }
       getUsers();
     } catch (e) {
       console.log(e);
     }
-  }, []);
-
-  const filteredUsers = users.filter((user) => {
-    if (filterOption === 'follow') {
-      return !user.isFollowing;
-    } else if (filterOption === 'following') {
-      return user.isFollowing;
-    }
-    return true; // 'all' option, show all users
-  });
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const onLoadMoreClick = () => {
-    setPage((prevPage) => prevPage + 1);
-  };
+    setPage(prevPage => prevPage + 1);
+  }
 
-  const handleFilterChange = (e) => {
-    setFilterOption(e.target.value);
-  };
 
   return (
     <>
       <Back />
-      <select value={filterOption} onChange={handleFilterChange}>
-        <option value="all">All</option>
-        <option value="follow">Follow</option>
-        <option value="following">Following</option>
-      </select>
       {isLoading && <Loader />}
       <ul>
-        {filteredUsers.slice(0, page * usersPerPage).map(({ id, user, tweets, followers, avatar }) => {
+        {users.slice(0, page * usersPerPage).map(({ id, user, tweets, followers, avatar }) => {
           return (
             <UserItem key={id} id={id} user={user} tweets={tweets} followers={followers} avatar={avatar} />
           )
         })}
       </ul>
-      {filteredUsers.length > page * usersPerPage && (
-        <button type='button' onClick={onLoadMoreClick}>Load more</button>
+      {users.length > page * usersPerPage && (
+        <button type='button' onClick={onLoadMoreClick}>Loading more</button>
       )}
       <ToastContainer autoClose={3000} limit={1} />
     </>
-  );
+  )
 };
 
 export default Tweets;
