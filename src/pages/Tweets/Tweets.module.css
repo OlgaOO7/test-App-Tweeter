@@ -4,3 +4,32 @@
   justify-content: center;
   gap: 20px;
 }
+
+.btnLoadWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.btnLoadMore {
+  padding: 14px 20px;
+  color: #ddbfff;
+  background-color: #5736a3;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 0px 3.43693px 3.43693px #f8f2ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+}
+
+.btnLoadMore:hover {
+  color:#5736a3;
+  background-color: #ddbfff;
+  box-shadow: 0px 3.43693px 3.43693px #5736a3;
+}

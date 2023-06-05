@@ -128,6 +128,14 @@ elementWrapper {
   background-color: #5CD3A8;
 }
 
+.btn.following:hover {
+  transform: scale(1.08);
+}
+
 .btn.follow {
   background-color: #EBD8FF;
+}
+
+.btn.follow:hover {
+  transform: scale(1.08);
 }

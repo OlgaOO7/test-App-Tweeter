@@ -6,7 +6,7 @@ import { UserItem } from "../../components/UserItem/UserItem";
 import { Loader } from "../../components/Loader/Loader";
 import Back from "../../components/Back/Back";
 import { Filter } from "../../components/Filter/Filter";
-  import css from "./Tweets.module.css";
+import css from "./Tweets.module.css";
 
 
 const usersPerPage = 3;
@@ -102,7 +102,10 @@ const Tweets = () => {
         ))}
       </ul>
       {filteredUsers.length > page * usersPerPage && (
-        <button type="button" onClick={onLoadMoreClick}>Load more</button>
+        <div className={css.btnLoadWrapper}>
+          <button type="button" onClick={onLoadMoreClick} className={css.btnLoadMore}>Load more</button>
+        </div>
+
       )}
       <ToastContainer autoClose={3000} limit={1} />
     </>

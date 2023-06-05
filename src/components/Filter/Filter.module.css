@@ -1,0 +1,21 @@
+.filterWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter {
+  padding: 10px 20px;
+  color: #373737;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #f8f2ff;
+  border: 1px solid #5736a3;
+  border-radius: 8px;
+  box-shadow: 1px 0 10px #5736A3;
+  outline: none;
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}

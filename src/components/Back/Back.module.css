@@ -1,0 +1,17 @@
+.arrowIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.navLinkBack{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 40px;;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #5736A3;
+  text-shadow: 1px 0 10px #EBD8FF;
+}
