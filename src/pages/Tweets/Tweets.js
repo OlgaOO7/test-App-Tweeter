@@ -66,13 +66,13 @@ const Tweets = () => {
     setFilteredUsers(updatedFilteredUsers);
   }, [users, filter]);
 
-  // useEffect(() => {
-  //   const resetFilter = () => {
-  //     setFilter('all');
-  //     localStorage.removeItem('filter');
-  //   };
-  //   return resetFilter;
-  // }, []);
+  useEffect(() => {
+    const resetFilter = () => {
+      setFilter('all');
+      localStorage.removeItem('filter');
+    };
+    return resetFilter;
+  }, []);
 
   const onLoadMoreClick = () => {
     setPage((prevPage) => prevPage + 1);
